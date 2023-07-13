@@ -22,7 +22,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
       <h1
       appTooltip
       [toolTipText]="toolTipText"
-      >{{toolTipText}}</h1>
+      >Hover Me!</h1>
       <!-- commenting out the lines to show the default values -->
       <!-- 
         [toolTipColor]="toolTipColor"
