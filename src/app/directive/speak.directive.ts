@@ -19,8 +19,8 @@ export class SpeakDirective {
       // this.speech.speak(utterance);
       this.initialBgColor = this.host.nativeElement.style.background;
       this.initialColor = this.host.nativeElement.style.color;
-      this.host.nativeElement.style.background = this.hoverBgColor.value;
-      this.host.nativeElement.style.color = this.hoverColor.value;
+      this.host.nativeElement.style.background = this.hoverBgColor.value || "black";
+      this.host.nativeElement.style.color = this.hoverColor.value || "red";
     }
 
   @HostListener("mouseleave")
